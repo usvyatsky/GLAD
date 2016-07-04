@@ -1,0 +1,26 @@
+{
+	"AttributeDefinitions": [
+		{
+			"AttributeType": "S",
+			"AttributeName": "primaryKey"
+		},
+		{
+			"AttributeType": "S",
+			"AttributeName": "secondaryKey"
+		}
+	], 
+	"KeySchema": [
+		{
+			"AttributeName": "primaryKey",
+			"KeyType": "HASH"
+		},
+		{
+			"AttributeName": "secondaryKey",
+			"KeyType": "RANGE"
+		}
+	], 
+	"ProvisionedThroughput": {
+		"ReadCapacityUnits": 5, 
+		"WriteCapacityUnits": 5
+	} 
+}
