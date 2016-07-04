@@ -1,0 +1,24 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "dynamoDbUploadPolicy",
+			"Action": [
+				"dynamodb:PutItem",
+				"dynamodb:UpdateItem"
+			],
+			"Effect": "Allow",
+			"Resource": "*"
+		},
+		{
+			"Sid": "",
+			"Resource": "*",
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			],
+			"Effect": "Allow"
+		}
+	]
+}
